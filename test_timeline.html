@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>World Map</title>
+  <style>
+    #map {
+      width: 100%;
+      height: 600px;
+    }
+    .country {
+      fill: #ccc;
+      stroke: #fff;
+      stroke-width: 0.5px;
+    }
+    .selected {
+      fill: #f00;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script>
+    // データセット
+    const countries = [
+      { code: 'AF', name: 'Afghanistan' },
+      { code: 'AL', name: 'Albania' },
+      { code: 'DZ', name: 'Algeria' },
+      // 他の国のデータも追加...
+    ];
+
+    // 地図の表示領域のサイズ
+    const width = 960;
+    const height = 500;
+
+    // SVG要素を作成
+    const svg = d3.select("#map")
+      .append("svg")
+      .attr("width", width)
+      .attr("height", height);
+
+    // 地図のパスを読み込む
+    d3.json("https://raw.githubusercontent.com/d3/d3-geo/master/test/data/world-50m.json").then((data) => {
+      const countriesData = topojson.feature(data, data.objects.countries).features;
+
+      // 地図の描画
+      svg.selectAll("path")
+        .data(countriesData)
+        .enter().append("path")
+        .attr("class", "country")
+        .attr("d", d3.geoPath())
+        .on("click", function(d) {
+          d3.select(this).classed("selected", !d3.select(this).classed("selected"));
+        });
+
+      // 特定の国を色付けする関数
+      function colorSelectedCountries() {
+        svg.selectAll("path")
+          .data(countriesData)
+          .attr("class", function(d) {
+            const country = countries.find((c) => c.code === d.id);
+            return country ? "country" : "country selected";
+          });
+      }
+
+      // 初期状態で特定の国を色付け
+      colorSelectedCountries();
+    });
+  </script>
+</body>
+</html>

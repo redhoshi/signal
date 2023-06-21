@@ -8,6 +8,7 @@ import Skills from './Pages/Skiils';
 import Projects from './Pages/Projects';
 import Footer from './Pages/Footer';
 import Eyecatch from './Pages/Eyecatch';
+import Timeline from './Pages/Timeline';
 
 
 function App() {

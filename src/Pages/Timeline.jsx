@@ -14,23 +14,51 @@ import {
 const milestones = [
   {
     id: 1,
-    date: 'MARCH 30, 2022',
-    title: 'Chakra Hackathon',
-    description: `Winner of first ever ChakraUI Hackathon. On sait depuis longtemps que travailler avec du texte lisible et contenant du sens.`
+    date: '1991年',
+    title: '包装廃棄物規制令の公布/施行',
+    description: `包装物の製造・流通業者に、包装廃棄物を自ら回収し、再利用することを義務付けた。`
   },
   {
     id: 2,
-    date: 'July 30, 2021',
-    title: 'Open Source, first contribution',
-    description: `Fixing a typo, to fix a bug, contributing to Open Source and collaborating to improve technology for everyone, Ahmad's world changed again!.`
+    date: '1998年',
+    title: '回収率が72%を下回る',
+    description: `1991年に公布/施行された包装廃棄物規制令の回収率が72%を下回った。包装廃棄物の回収率が72%を下回った場合、強制的にデポジット制度が適用される規定があった`
   },
   {
     id: 3,
-    date: 'July 30, 2018',
-    title: 'Freelancing, started working for myself',
+    date: '1999年',
+    title: '強制デポジット制度に関する議論が開始',
     description:
-      'Ahmad starts his own business consulting for companies as a fullstack developer. Clients include UK Government departments, UK banks, global fintechs and startups.'
-  }
+      'リターナブル容器利用事業者(中小飲料、消費者団体、環境団体)とワンウェイ容器利用事業者(大規模飲料事業者、大ビール会社)の間で協議が行われる。連邦政府は当初国民の強制デポジット制度への風当たりなどから容器に税を課す税収制度の導入を検討していた。しかし、政治的な兼ね合いなどから強制デポジットの導入が最終的に決定した。この過程までに税収制度の他に多く議論や訴訟が起きた。'
+  },
+  {
+    id: 4,
+    date: '2003',
+    title: 'デポジット制度の導入が開始',
+    description:
+      '2003年度時点では飲料業界はデポジット制度の導入に向けた全国の回収および清算システムの準備が整っていなかったため、混乱が起きた。'
+  },
+  {
+    id: 5,
+    date: '2006',
+    title: '缶やPETをデポジット制度の対象に追加',
+    description:
+      'ビール瓶を筆頭とするリターナブル容器の回収に加えて、缶やPETにも幅を広げる改正を行う（ただし缶やPETは中身の飲み物の種類による）。また同時に回収の機械化も開始された。'
+  },
+  {
+    id: 6,
+    date: '2019',
+    title: 'エナジードリンク等の缶をデポジット制度の対象に追加',
+    description:
+      'エナジードリンクなどの缶も回収対象になった。'
+  },
+  {
+    id: 7,
+    date: '2022',
+    title: '全てのPETと飲料缶がデポジット制度の対象に',
+    description:
+      '中身を問わず、すべての使い捨てPETと飲料缶は、回収対象に（乳製品のみ例外）'
+  },
 ];
 
 const Milestones = () => {

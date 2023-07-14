@@ -29,7 +29,7 @@ const Projects = () => {
   })
 
   return (
-    <div id="Projects" style={{height:"1200px",padding:"5%"}}>
+    <div id="Projects" style={{height:"2200px",paddingBlockEnd:"5%"}}>
       <h1 style={{fontSize:"50px",paddingLeft:"10%",paddingRight:"10%",paddingTop:"5%",paddingBlockEnd:"5%"}}>
       History of Germany's deposit
       </h1>

@@ -66,9 +66,37 @@ const About = () => {
               {({ geographies }) =>
                 geographies.map((geo) => {
                   // geo.propertiesで属性を見れる
+                  console.log( geo.properties.name)
                   const isJapan = geo.properties.name === "Japan";
                   const isGermany = geo.properties.name === "Germany";
-                  const countryColor = isJapan ? "green" : isGermany ? "green" : "gray";
+                  const isAustria = geo.properties.name === "Austria";
+                  const isBelarus = geo.properties.name === "Belarus";
+                  const isBelgium = geo.properties.name === "Belgium";
+                  const isCroatia = geo.properties.name === "Croatia";
+                  const isCzech = geo.properties.name === "Czech Republic";
+                  const isDenmark = geo.properties.name === "Denmark";
+                  const isEcuador = geo.properties.name === "Ecuador";
+                  const isEstonia = geo.properties.name === "Estonia";
+                  const isFiji = geo.properties.name === "Fiji";
+                  const isFinland = geo.properties.name === "Finland";
+                  const isIceland = geo.properties.name === "Iceland";
+                  const isIreland = geo.properties.name === "Ireland";
+                  const isIsrael = geo.properties.name === "Israel";
+                  const isJamaica = geo.properties.name === "Jamaica";
+                  const isLatvia = geo.properties.name === "Latvia";
+                  const isLithuania = geo.properties.name === "Lithuania";
+                  const isMalta = geo.properties.name === "Malta";
+                  const isNetherlands = geo.properties.name === "Netherlands";
+                  const isNorway = geo.properties.name === "Norway";
+                  const isSlovakia = geo.properties.name === "Slovakia";
+                  const isKorea = geo.properties.name === "South Korea";
+                  const isSweden = geo.properties.name === "Sweden";
+                  const isSwitzerland = geo.properties.name === "Switzerland";
+                  const isTurkey = geo.properties.name === "Turkey";
+                  const isUnited = geo.properties.name === "United Kingdom";
+                  const isUruguay = geo.properties.name === "Uruguay";
+                  
+                  const countryColor = isUruguay || isUnited || isTurkey || isSwitzerland || isSweden || isKorea  || isSlovakia  || isNorway  || isNetherlands || isMalta || isLithuania|| isLatvia || isJamaica || isIsrael || isIreland ||  isIceland || isFinland || isFiji || isEstonia || isEcuador || isDenmark ||  isCzech  || isCroatia  || isBelarus || isBelgium ? "green" : isAustria ? "green" : isGermany ? "green" : "gray";
                   return (
                     <Geography
                       key={geo.rsmKey}

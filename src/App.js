@@ -8,6 +8,8 @@ import Skills from './Pages/Skiils';
 import Projects from './Pages/Projects';
 import Footer from './Pages/Footer';
 import Eyecatch from './Pages/Eyecatch';
+import Interview from './Pages/Interview';
+import Systems from './Pages/Systems';
 import Timeline from './Pages/Timeline';
 
 
@@ -18,8 +20,10 @@ function App() {
       <Eyecatch/>
       <Home/>
       <About />
+      <Systems/>
       <Projects/>
       <Skills />
+      <Interview/>
       <Contact/>
       <Footer/>
     </div>

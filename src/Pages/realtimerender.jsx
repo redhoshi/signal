@@ -42,7 +42,7 @@ const About = () => {
         ref={mapContainerRef}
       >
         <h1 style={{fontSize:"50px",paddingLeft:"10%",paddingRight:"10%",paddingTop:"5%",paddingBlockEnd:"5%"}}>
-        World
+        Worlds
       </h1>
         <div className="fold">
           <ComposableMap

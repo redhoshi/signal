@@ -8,7 +8,7 @@ import sys5 from '../Photo/3x/sys5.png'
 
 const Home = () => {
   return (
-    <div id="Home" style={{height:"",paddingBlockEnd:"5%"}}>
+    <div id="Pfand System" style={{height:"",paddingBlockEnd:"5%"}}>
       <h1 style={{fontSize:"50px",paddingLeft:"10%",paddingRight:"10%",paddingTop:"5%",paddingBlockEnd:"5%"}}>
         What's the Pfand System?
       </h1>

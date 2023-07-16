@@ -65,24 +65,29 @@ export default function Navbar() {
                 </Button>
 
                 <Button className="btnRes">
-                  <a href="#About">
-                    <b>About</b>
+                  <a href="#Concept">
+                    <b>Concept</b>
                   </a>
                 </Button>
 
                 <Button className="btnRes">
-                  <a href="#Skills">
+                  <a href="#World">
                     {" "}
-                    <b>Workshop</b>
+                    <b>World</b>
                   </a>
                 </Button>
 
                 <Button className="btnRes">
-                  <a href="#Projects">
-                    <b>Projects</b>
+                  <a href="#Pfand System">
+                    <b>Pfand System</b>
                   </a>
                 </Button>
 
+                <Button className="btnRes">
+                  <a href="#Survey">
+                    <b>Survey</b>
+                  </a>
+                </Button>
                 <Button className="btnRes">
                   <a href="#Contact">
                     <b>Contact</b>
@@ -93,21 +98,6 @@ export default function Navbar() {
           </Flex>
           <Flex alignItems={"center"}>
             <Stack direction={"row"} spacing={7}>
-              <Button onClick={toggleColorMode}>
-                {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
-              </Button>
-
-              <Button
-                backgroundColor="#a891b7"
-                _hover={{ bg: "#a891b7", color: "black" }}
-                color="white"
-                variant="solid"
-                onClick={onButtonClick}
-                size={["sm", "md"]}
-                download=""
-                id="resumeBtn"
-              >
-              </Button>
             </Stack>
           </Flex>
           <IconButton
@@ -164,7 +154,6 @@ export default function Navbar() {
                 <Button
                   onClick={isOpen ? onClose : onOpen}
                   _hover={{
-                    textShadow: "#FC0 1px 0 10px",
                     transform: "scale(1.2)",
                   }}
                 >
@@ -177,44 +166,50 @@ export default function Navbar() {
                 <Button
                   onClick={isOpen ? onClose : onOpen}
                   _hover={{
-                    textShadow: "#FC0 1px 0 10px",
                     transform: "scale(1.2)",
                   }}
                 >
-                  <a href="#About">
-                    <b>About</b>
+                  <a href="#Concept">
+                    <b>Concept</b>
                   </a>
                 </Button>
 
                 <Button
                   onClick={isOpen ? onClose : onOpen}
                   _hover={{
-                    textShadow: "#FC0 1px 0 10px",
                     transform: "scale(1.2)",
                   }}
                 >
-                  <a href="#Skills">
+                  <a href="#World">
                     {" "}
-                    <b>Workshop</b>
+                    <b>World</b>
                   </a>
                 </Button>
 
                 <Button
                   onClick={isOpen ? onClose : onOpen}
                   _hover={{
-                    textShadow: "#FC0 1px 0 10px",
                     transform: "scale(1.2)",
                   }}
                 >
-                  <a href="#Projects">
-                    <b>Projects</b>
+                  <a href="#Pfand System">
+                    <b>Pfand System</b>
+                  </a>
+                </Button>
+                <Button
+                  onClick={isOpen ? onClose : onOpen}
+                  _hover={{
+                    transform: "scale(1.2)",
+                  }}
+                >
+                  <a href="#Survey">
+                    <b>Survey</b>
                   </a>
                 </Button>
 
                 <Button
                   onClick={isOpen ? onClose : onOpen}
                   _hover={{
-                    textShadow: "#FC0 1px 0 10px",
                     transform: "scale(1.2)",
                   }}
                 >

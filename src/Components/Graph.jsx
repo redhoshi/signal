@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { XYPlot, LineSeries, VerticalBarSeries, MarkSeries, RadialChart } from 'react-vis';
-import { Stack, Divider, Text } from "@chakra-ui/react";
+import { Stack, Divider, Text,  chakra, } from "@chakra-ui/react";
 
 class Graph extends Component {
     render() {
@@ -24,7 +24,9 @@ class Graph extends Component {
 
         return (
             <div className="App">
-                <h2>プラスチックゴミの回収への貢献度</h2>
+                <chakra.h1 fontSize="2xl" lineHeight={1.2} fontWeight="bold" w="100%">
+                    プラスチックゴミの回収への貢献度
+                </chakra.h1>
                 <div class="fold">
                     <div class="Card_size">
                         <div class="buble">
@@ -48,7 +50,9 @@ class Graph extends Component {
                         />
                     </div>
                 </div>
-                <h2>デポジット制度の認知度</h2>
+                <chakra.h1 fontSize="2xl" lineHeight={1.2} fontWeight="bold" w="100%">
+                    デポジット制度の認知度
+                </chakra.h1>
                 <div class="fold">
                 <div class="Card_size">
                     <div class="buble">

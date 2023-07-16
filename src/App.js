@@ -1,16 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './Components/Navbar';
-import About from './Pages/About';
-import Contact from './Pages/Contact';
-import Home from './Pages/Home';
-import Skills from './Pages/Skiils';
-import Projects from './Pages/Projects';
+import World from './Pages/World';
+import UsePfand from './Pages/UsePfand';
+import Concept from './Pages/Concept';
+import Survey from './Pages/Survey';
+import History from './Pages/History';
 import Footer from './Pages/Footer';
 import Eyecatch from './Pages/Eyecatch';
 import Interview from './Pages/Interview';
 import Systems from './Pages/Systems';
-import Timeline from './Pages/Timeline';
+import Contact from './Pages/Contact';
 
 
 function App() {
@@ -18,12 +18,13 @@ function App() {
     <div className="App">
       <Navbar />
       <Eyecatch/>
-      <Home/>
-      <About />
+      <Concept/>
+      <World />
       <Systems/>
-      <Projects/>
-      <Skills />
+      <History/>
+      <Survey />
       <Interview/>
+      <UsePfand/>
       <Contact/>
       <Footer/>
     </div>

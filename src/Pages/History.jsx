@@ -1,5 +1,5 @@
 import React from "react";
-import Timeline from './Timeline';
+import Timeline from '../Components/Timeline';
 
 
 import {
@@ -16,7 +16,7 @@ import {
 } from '@chakra-ui/react'
 import { Box } from '@chakra-ui/react'
 
-const Projects = () => {
+const History = () => {
   // box
   const steps = [
     { title: 'First', description: 'Contact Info' },
@@ -38,4 +38,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default History;

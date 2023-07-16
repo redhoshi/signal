@@ -3,9 +3,9 @@ import { Card,  CardHeader, CardBody, CardFooter, Center } from '@chakra-ui/reac
 import { Box, Flex, Text, Avatar, Heading, Stack, Divider, ButtonGroup, IconButton, Image, Button } from "@chakra-ui/react";
 import Pfand from '../Photo/3x/pfand.png'
 
-const Home = () => {
+const Concept = () => {
   return (
-    <div id="Home" style={{height:"",paddingBlockEnd:"5%"}}>
+    <div id="Concept" style={{height:"",paddingBlockEnd:"5%"}}>
       <h1 style={{fontSize:"50px",paddingLeft:"10%",paddingRight:"10%",paddingTop:"5%",paddingBlockEnd:"5%"}}>
         Concept
       </h1>
@@ -32,4 +32,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Concept;

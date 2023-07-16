@@ -4,21 +4,25 @@ import {
   TagLabel,
   TagLeftIcon,
   TagRightIcon,
-  TagCloseButton, HStack
+  TagCloseButton, HStack,
+  chakra
 } from "@chakra-ui/react";
 import { FaQuestionCircle } from "react-icons/fa";
 import { BsPersonCircle } from "react-icons/bs";
 
 const Skills = () => {
   return (
-    <div id="Skills" style={{ height:"",paddingBlockStart:"5%" }}>
+    <div id="" style={{ height:"",paddingBlockStart:"5%" }}>
+      {/*}
       <h1 style={{ fontSize: "50px", paddingLeft: "10%", paddingRight: "10%", paddingTop: "5%", paddingBlockEnd: "5%" }}>
         Interview
-      </h1>
-      <Stack direction='row' h='100px' p={4}>
-        <Divider orientation='vertical' />
-        <Text><FaQuestionCircle size={25} />ドイツでは  ＰＥＴ１本約４０円でデポジットシステムが適用されています。この価格設定は高い / 安いですか</Text>
-      </Stack>
+  </h1>*/}
+    <chakra.h1 fontSize="2xl" lineHeight={1.2} fontWeight="bold" w="100%">
+        デポジット制度を日本で導入するなら
+    </chakra.h1>
+      <div class="buble">
+        <p>ドイツでは  ＰＥＴ１本約４０円でデポジット制度が適用されています。<br></br>この制度を日本に導入するとしたら、あなたは賛成/反対ですか？またその理由を教えてください。</p>
+      </div>
       <div class="fold">
         <div class="Card_size">
           <Card maxW='sm'>

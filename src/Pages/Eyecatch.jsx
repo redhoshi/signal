@@ -11,7 +11,7 @@ const ImageComponent = ({ imageUrl }) => {
 
   useEffect(() => {
     // ページがロードされたら動画を自動再生
-   
+
   }, []);
 
   useEffect(() => {
@@ -29,7 +29,7 @@ const ImageComponent = ({ imageUrl }) => {
     window.addEventListener('resize', handleResize);
     handleResize(); // 初回レンダリング時にも呼び出す
 
-    
+
 
     return () => {
       window.removeEventListener('resize', handleResize);
@@ -37,10 +37,11 @@ const ImageComponent = ({ imageUrl }) => {
   }, []);
 
   return (
-
-    <div class="eye_box" id="" style={{}}>
-      <img id="image" src={Eyecatch3} alt="Image" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
-      <p>Pfand<br></br>Vending<br></br>Machine</p>
+    <div id="Home">
+      <div class="eye_box" id="" style={{}}>
+        <img id="image" src={Eyecatch3} alt="Image" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
+        <p>Pfand<br></br>Vending<br></br>Machine</p>
+      </div>
     </div>
 
   );

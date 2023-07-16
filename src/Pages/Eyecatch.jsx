@@ -38,9 +38,9 @@ const ImageComponent = ({ imageUrl }) => {
 
   return (
 
-    <div id="" style={{}}>
+    <div class="eye_box" id="" style={{}}>
       <img id="image" src={Eyecatch3} alt="Image" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
-      <p>TestTestTest</p>
+      <p>Pfand<br></br>Vending<br></br>Machine</p>
     </div>
 
   );

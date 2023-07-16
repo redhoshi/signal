@@ -7,7 +7,7 @@ const Name = () => {
       fontSize={{ base: "18px", md: "24px", lg: "30px" }}
       style={{ }}
     >
-      Project_Design
+      Pfand 
     </Text>
 
     // <Show breakpoint='(max-width: 1000px)'>

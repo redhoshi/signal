@@ -1,6 +1,7 @@
 import React from "react";
 import { Card,  CardHeader, CardBody, CardFooter, Center } from '@chakra-ui/react'
 import { Box, Flex, Text, Avatar, Heading, Stack, Divider, ButtonGroup, IconButton, Image, Button } from "@chakra-ui/react";
+import Pfand from '../Photo/3x/pfand.png'
 
 const Home = () => {
   return (
@@ -11,16 +12,17 @@ const Home = () => {
       <div class="fold">
         <div class="Card_size">
               <Image
-              borderRadius='full'
+              borderRadius=''
               boxSize='250px'
-                src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
+              css={{ width: '200px', height: '320px' }}
+                src={Pfand}
                 alt='Green double couch with wooden legs'
               />
           </div>
           <div class="Card_size">
-            <p>これはテストです。これはテストです。</p>
-            <p>これはテストです。これはテストです。</p>
-            <p>これはテストです。これはテストです。</p>
+            <p class="icon_text">身近なところから環境保全に取り組もう</p>
+            <p class="icon_text">プラスチックゴミを減らそう</p>
+            <p class="icon_text">SDGsの達成に貢献しよう</p>
           </div>
       </div>
 

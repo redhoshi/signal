@@ -20,7 +20,8 @@ class Graph extends Component {
         const myData = [{ label: '5times', angle: 8 }, { label: '4times', angle: 3 }, { label: '3times', angle: 2 }, { label: '2times', angle: 1 }, { label: '1time', angle: 2 }, { label: '0 time', angle: 8 }]
         const myBottle = [{ label: '5times', angle: 3 }, { label: '4times', angle: 4 }, { label: '3times', angle: 6 }, { label: '2times', angle: 3 }, { label: '1time', angle: 1 }, { label: '0 time', angle: 7 }]
         const myDeposit = [{ label: '知っている', angle: 10 }, { label: '知らない', angle: 14 }]
-        const myUse = [{ label: '利用したことがある', angle: 22 }, { label: '利用したことがない', angle: 2 }]
+        const myUse = [{ label: '利用したことがある', angle: 2 }, { label: '利用したことがない', angle: 22 }]
+        const ifUse = [{ label: '賛成', angle: 15 }, { label: '反対', angle: 9 }]
 
         return (
             <div className="App">
@@ -74,6 +75,18 @@ class Graph extends Component {
                         height={300}
                         showLabels={true} />
                 </div>
+                </div>
+                <div class="Card_size">
+                    <center>
+                    <div class="buble">
+                        <p>ＰＥＴ１本につき、約４０円ほどで、デポジット制度を<br></br>日本に導入する議論になった際、あなたは賛成 / 反対ですか。</p>
+                    </div>
+                    <RadialChart
+                        data={ifUse}
+                        width={300}
+                        height={300}
+                        showLabels={true} />
+                    </center>
                 </div>
             </div>
         );
